@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "75E64D06-5C8F-424A-9C47-1FF15CE495F3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../NetworkClient/Sources/NetworkClient/NetworkProtocols/NetworkRequestProtocol.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "makeRequest()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "75E64D06-5C8F-424A-9C47-1FF15CE495F3 - 7af6de43ed038a89"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NetworkClient.NetworkRequestProtocol.makeRequest() throws -&gt; Foundation.URLRequest"
-                  moduleName = "NetworkClientSink"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/radhachilamkurthy/Desktop/NetworkClient/Sources/NetworkClient/NetworkProtocols/NetworkRequestProtocol.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "539">
-               </Location>
-               <Location
-                  uuid = "75E64D06-5C8F-424A-9C47-1FF15CE495F3 - 7af6de43ed038a89"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NetworkClient.NetworkRequestProtocol.makeRequest() throws -&gt; Foundation.URLRequest"
-                  moduleName = "NetworkClientSink"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/radhachilamkurthy/Desktop/NetworkClient/Sources/NetworkClient/NetworkProtocols/NetworkRequestProtocol.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "811">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "627215AB-D18B-449D-868F-C5830E2E6ABC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
