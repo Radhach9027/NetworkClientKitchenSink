@@ -6,7 +6,7 @@ class ForegroundDownload: UIViewController {
     private var cancellable = Set<AnyCancellable>()
     @IBOutlet var progressView: UIProgressView!
     @IBOutlet var image: UIImageView!
-    private let service = DownloadService(network: Network(config: .default))
+    private let service = DownloadService(network: Network(config: .default()))
 
     override func viewDidLoad() {
         super.viewDidLoad()
