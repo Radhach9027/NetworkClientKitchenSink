@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3R7-Tm-q3T">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NetworkClient Kitchen Sink-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkClientSink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="O0R-hQ-zfL">
+                                <rect key="frame" x="98" y="231.66666666666663" width="194" height="381"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgX-kV-jpX">
+                                        <rect key="frame" x="53.666666666666664" y="0.0" width="86.666666666666686" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Request"/>
+                                        <connections>
+                                            <segue destination="7ou-5o-2N6" kind="show" id="lbP-oa-cjf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjp-yL-EQk">
+                                        <rect key="frame" x="33.33333333333335" y="43.333333333333343" width="127.66666666666669" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Bulk requests"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWc-p1-lRi">
+                                        <rect key="frame" x="57.666666666666664" y="86.666666666666657" width="78.666666666666686" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Upload"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT0-NO-ZnG">
+                                        <rect key="frame" x="2.6666666666666714" y="130.00000000000003" width="189" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Upload multipart data"/>
+                                        <connections>
+                                            <segue destination="70a-vc-NOP" kind="show" id="lqf-NS-Pry"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqv-jA-zVH">
+                                        <rect key="frame" x="36.33333333333335" y="173.33333333333334" width="121.66666666666669" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Bulk uploads"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6o-fA-AWw">
+                                        <rect key="frame" x="1.6666666666666714" y="216.66666666666666" width="190.66666666666663" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Foreground download"/>
+                                        <connections>
+                                            <segue destination="yWP-fe-aek" kind="show" id="IAh-6c-vJ3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s93-MA-88u">
+                                        <rect key="frame" x="0.0" y="260" width="194" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Background download"/>
+                                        <connections>
+                                            <segue destination="Iv9-VE-VYV" kind="show" id="Hjy-Dj-8CF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXX-Yy-ARx">
+                                        <rect key="frame" x="25.333333333333329" y="303.33333333333337" width="143.66666666666669" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Bulk downloads"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMG-iA-Jai">
+                                        <rect key="frame" x="14.333333333333329" y="346.66666666666674" width="165.66666666666669" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Parallel downloads"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O0R-hQ-zfL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PNQ-Q6-LJb"/>
+                            <constraint firstItem="O0R-hQ-zfL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kya-Ys-O10"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="NetworkClient Kitchen Sink" id="39q-88-TeL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066.1538461538462" y="3.5545023696682461"/>
+        </scene>
+        <!--Foreground download-->
+        <scene sceneID="uuf-Z2-uZc">
+            <objects>
+                <viewController storyboardIdentifier="ForegroundDownload" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yWP-fe-aek" customClass="ForegroundDownload" customModule="NetworkClientSink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vmD-ZI-yMy">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lS8-VX-5YL">
+                                <rect key="frame" x="39" y="253.33333333333334" width="312" height="337.33333333333326"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQK-cI-rEL">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="303.33333333333331"/>
+                                    </imageView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jhJ-P6-Dzk">
+                                        <rect key="frame" x="0.0" y="333.33333333333326" width="312" height="4"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zRW-t7-4ea"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lS8-VX-5YL" firstAttribute="centerX" secondItem="vmD-ZI-yMy" secondAttribute="centerX" id="0eK-w1-nNB"/>
+                            <constraint firstItem="lS8-VX-5YL" firstAttribute="width" secondItem="vmD-ZI-yMy" secondAttribute="width" multiplier="0.8" id="fDr-Ib-Box"/>
+                            <constraint firstItem="lS8-VX-5YL" firstAttribute="height" secondItem="vmD-ZI-yMy" secondAttribute="height" multiplier="0.4" id="fRd-1D-u9D"/>
+                            <constraint firstItem="lS8-VX-5YL" firstAttribute="centerY" secondItem="vmD-ZI-yMy" secondAttribute="centerY" id="vnY-Ls-2u4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Foreground download" id="9ca-gU-iuC"/>
+                    <connections>
+                        <outlet property="image" destination="SQK-cI-rEL" id="Fnk-BW-k2k"/>
+                        <outlet property="progressView" destination="jhJ-P6-Dzk" id="njV-gb-fvn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F50-qQ-ImB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2089.2307692307691" y="3.5545023696682461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zcj-T3-Vhi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3R7-Tm-q3T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aTn-7R-DBc">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WGk-oU-C7d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQM-cB-Zay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.92307692307691" y="3.5545023696682461"/>
+        </scene>
+        <!--Background download-->
+        <scene sceneID="OWr-sR-HB0">
+            <objects>
+                <viewController storyboardIdentifier="BackgroundDownload" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Iv9-VE-VYV" customClass="BackgroundDownload" customModule="NetworkClientSink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="koW-3H-6I1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3RW-5P-THz">
+                                <rect key="frame" x="39" y="253.33333333333334" width="312" height="337.33333333333326"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9qH-Xh-8ZR">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="303.33333333333331"/>
+                                    </imageView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="i2R-i8-lDW">
+                                        <rect key="frame" x="0.0" y="333.33333333333326" width="312" height="4"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ECQ-cP-O5E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3RW-5P-THz" firstAttribute="centerX" secondItem="koW-3H-6I1" secondAttribute="centerX" id="5Qy-eA-kK6"/>
+                            <constraint firstItem="3RW-5P-THz" firstAttribute="width" secondItem="koW-3H-6I1" secondAttribute="width" multiplier="0.8" id="6Mc-0Z-LA7"/>
+                            <constraint firstItem="3RW-5P-THz" firstAttribute="height" secondItem="koW-3H-6I1" secondAttribute="height" multiplier="0.4" id="6oh-t5-rFe"/>
+                            <constraint firstItem="3RW-5P-THz" firstAttribute="centerY" secondItem="koW-3H-6I1" secondAttribute="centerY" id="GUo-BD-rtU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Background download" id="kGY-4y-ryr" userLabel="Background download"/>
+                    <connections>
+                        <outlet property="image" destination="9qH-Xh-8ZR" id="O1e-Vw-cbR"/>
+                        <outlet property="progressView" destination="i2R-i8-lDW" id="kxd-1D-gJi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFY-M2-k6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2883" y="4"/>
+        </scene>
+        <!--Request-->
+        <scene sceneID="niX-a2-BKh">
+            <objects>
+                <viewController storyboardIdentifier="Request" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7ou-5o-2N6" customClass="Request" customModule="NetworkClientSink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eEV-cd-Xnr">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RBd-Iz-ymP">
+                                <rect key="frame" x="20" y="111" width="350" height="679"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gu-Jp-gtu">
+                                        <rect key="frame" x="39.666666666666657" y="0.0" width="270.66666666666674" height="92"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="egp-K5-pAi">
+                                        <rect key="frame" x="19" y="92" width="312" height="587"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVk-ge-9r2">
+                                        <rect key="frame" x="175" y="679" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="egp-K5-pAi" firstAttribute="leading" secondItem="RBd-Iz-ymP" secondAttribute="leading" constant="19" id="tl0-0M-uD3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jDH-Vh-gTK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RBd-Iz-ymP" secondAttribute="trailing" constant="20" id="1gZ-xc-XwG"/>
+                            <constraint firstItem="jDH-Vh-gTK" firstAttribute="bottom" secondItem="RBd-Iz-ymP" secondAttribute="bottom" constant="20" id="YFK-Nz-zcN"/>
+                            <constraint firstItem="RBd-Iz-ymP" firstAttribute="leading" secondItem="eEV-cd-Xnr" secondAttribute="leading" constant="20" id="axZ-aH-AS2"/>
+                            <constraint firstItem="RBd-Iz-ymP" firstAttribute="top" secondItem="jDH-Vh-gTK" secondAttribute="top" constant="20" id="laS-oI-9gQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Request" id="qu6-hI-KIw"/>
+                    <connections>
+                        <outlet property="image" destination="egp-K5-pAi" id="Mff-fl-bgq"/>
+                        <outlet property="subText" destination="CVk-ge-9r2" id="UTy-Tr-PCP"/>
+                        <outlet property="text" destination="4Gu-Jp-gtu" id="WPK-0S-3VS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMv-Yc-B0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3667.6923076923076" y="3.5545023696682461"/>
+        </scene>
+        <!--Upload multipart-->
+        <scene sceneID="WMo-6I-ZBy">
+            <objects>
+                <viewController storyboardIdentifier="UploadMultipart" useStoryboardIdentifierAsRestorationIdentifier="YES" id="70a-vc-NOP" customClass="UploadMultipart" customModule="NetworkClientSink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p6a-NF-NcY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="C8x-dm-xRQ">
+                                <rect key="frame" x="39" y="253.33333333333334" width="312" height="337.33333333333326"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="DataStructures" translatesAutoresizingMaskIntoConstraints="NO" id="AS0-23-ken">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="239"/>
+                                    </imageView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NIZ-94-Wg7">
+                                        <rect key="frame" x="0.0" y="269" width="312" height="4"/>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABt-nT-pqN">
+                                        <rect key="frame" x="0.0" y="303" width="312" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Upload"/>
+                                        <connections>
+                                            <action selector="uploadMultipartWithSender:" destination="70a-vc-NOP" eventType="touchUpInside" id="2A1-Sf-6XU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FXj-iT-GZm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C8x-dm-xRQ" firstAttribute="height" secondItem="p6a-NF-NcY" secondAttribute="height" multiplier="0.4" id="S16-6m-5sJ"/>
+                            <constraint firstItem="C8x-dm-xRQ" firstAttribute="width" secondItem="p6a-NF-NcY" secondAttribute="width" multiplier="0.8" id="jiG-yY-iWC"/>
+                            <constraint firstItem="C8x-dm-xRQ" firstAttribute="centerY" secondItem="p6a-NF-NcY" secondAttribute="centerY" id="rNM-l8-E74"/>
+                            <constraint firstItem="C8x-dm-xRQ" firstAttribute="centerX" secondItem="p6a-NF-NcY" secondAttribute="centerX" id="zRJ-YM-BoR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Upload multipart" id="6HL-bu-atQ" userLabel="Background download"/>
+                    <connections>
+                        <outlet property="image" destination="AS0-23-ken" id="6Kc-c3-E7A"/>
+                        <outlet property="progressView" destination="NIZ-94-Wg7" id="Ytw-Bg-iJo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AgV-b1-Cwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2823" y="-749"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DataStructures" width="4090" height="2879"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
