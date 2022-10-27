@@ -6,9 +6,9 @@ class BackgroundDownload: UIViewController {
     private var cancellable = Set<AnyCancellable>()
     @IBOutlet var progressView: UIProgressView!
     @IBOutlet var image: UIImageView!
-    private var service = DownloadService(
+    private lazy var service = DownloadService(
         network: Network(
-            config: .background(identifer: Bundle.identifier),
+            config: .background(identifer: Bundle.identifier, queue: OperationQueue()),
             urlSessionDidFinishEvents: { _ in
                 DispatchQueue.main.async {
                     if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
@@ -23,7 +23,12 @@ class BackgroundDownload: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundDownload()
+    }
+}
 
+private extension BackgroundDownload {
+    func backgroundDownload() {
         service.download(endpoint: .image, receive: .main)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] result in

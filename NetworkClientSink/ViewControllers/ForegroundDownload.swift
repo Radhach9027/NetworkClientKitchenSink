@@ -10,22 +10,28 @@ class ForegroundDownload: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        download()
+    }
+}
+
+private extension ForegroundDownload {
+    func download() {
         service.download(endpoint: .image, receive: .main)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] result in
                 switch result {
-                case .finished:
-                    debugPrint("ForegroundDownload finished")
-                case let .failure(error):
-                    self?.present(withTitle: error.title.value, message: error.errorMessage.value)
+                    case .finished:
+                        debugPrint("ForegroundDownload finished")
+                    case let .failure(error):
+                        self?.present(withTitle: error.title.value, message: error.errorMessage.value)
                 }
             } receiveValue: { [weak self] response in
                 switch response {
-                case let .progress(percentage):
-                    debugPrint("ForegroundDownload percentage = \(percentage)")
-                    self?.progressView.progress = percentage
-                case let .response(url):
-                    self?.image.load(url: url)
+                    case let .progress(percentage):
+                        debugPrint("ForegroundDownload percentage = \(percentage)")
+                        self?.progressView.progress = percentage
+                    case let .response(url):
+                        self?.image.load(url: url)
                 }
             }
             .store(in: &cancellable)
