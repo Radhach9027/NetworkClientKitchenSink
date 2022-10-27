@@ -7,7 +7,7 @@ class Request: UIViewController {
     @IBOutlet var image: UIImageView!
     @IBOutlet var text: UILabel!
     @IBOutlet var subText: UILabel!
-    private let service = RequestService(network: Network(config: .default()))
+    private lazy var service = RequestService(network: Network(config: .default()))
     enum RequestType {
         case data, codable
     }
