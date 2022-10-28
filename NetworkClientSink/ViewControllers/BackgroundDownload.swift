@@ -8,7 +8,7 @@ class BackgroundDownload: UIViewController {
     @IBOutlet var image: UIImageView!
     private let service = DownloadService(
         network: Network(
-            config: .background(identifer: Bundle.identifier, queue: .main),
+            config: .background(identifer: Bundle.identifier),
             urlSessionDidFinishEvents: { _ in
                 DispatchQueue.main.async {
                     if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
