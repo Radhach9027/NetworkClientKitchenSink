@@ -16,4 +16,8 @@ final class RequestService: ObservableObject {
     func request<T>(endpoint: RequestEndPoint, codable: T.Type, receive: DispatchQueue) -> AnyPublisher<T, NetworkError> where T: Decodable {
          network.request(for: endpoint, codable: T.self, receive: receive)
     }
+    
+    func serialRequests(endpoints: [RequestEndPoint], receive: DispatchQueue) -> PassthroughSubject<Data?, NetworkError> {
+         network.serialRequests(for: endpoints, receive: receive)
+    }
 }
