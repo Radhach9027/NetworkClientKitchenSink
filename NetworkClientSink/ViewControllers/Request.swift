@@ -8,7 +8,7 @@ class Request: UIViewController {
     @IBOutlet var text: UILabel!
     @IBOutlet var subText: UILabel!
     private lazy var service = RequestService(network: Network(config: .default()))
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         execute(type: .serial)
@@ -19,20 +19,20 @@ private extension Request {
     enum RequestType {
         case data, codable, serial, concurrent
     }
-    
+
     func execute(type: RequestType) {
         switch type {
-            case .data:
-                dataRequest()
-            case .codable:
-                codableRequest()
-            case .serial:
-                serialRequests()
-            case .concurrent:
-                concurrentRequests()
+        case .data:
+            dataRequest()
+        case .codable:
+            codableRequest()
+        case .serial:
+            serialRequests()
+        case .concurrent:
+            concurrentRequests()
         }
     }
-    
+
     func dataRequest() {
         service.request(endpoint: .fetch, receive: .main)
             .receive(on: DispatchQueue.main)
@@ -71,27 +71,25 @@ private extension Request {
             }
             .store(in: &cancellable)
     }
-    
-    
+
     func serialRequests() {
         service.serialRequests(endpoints: [.fetch, .fetch, .fetch], receive: .main)
             .receive(on: DispatchQueue.main)
-            .compactMap{$0}
+            .compactMap { $0 }
             .decode(type: NasaAstronomy.self, decoder: JSONDecoder())
             .sink { result in
                 switch result {
-                    case .finished:
-                        debugPrint("serialRequests finished")
-                    case let .failure(error):
-                        debugPrint("serialRequests failed = \(error.localizedDescription)")
+                case .finished:
+                    debugPrint("serialRequests finished")
+                case let .failure(error):
+                    debugPrint("serialRequests failed = \(error.localizedDescription)")
                 }
             } receiveValue: { model in
                 debugPrint("serialRequests model = \(model)")
             }
             .store(in: &cancellable)
     }
-    
+
     func concurrentRequests() {
-        
     }
 }
