@@ -29,13 +29,13 @@
 		A2C0E0D029041E7800AD8C5E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C0E0CF29041E7800AD8C5E /* Request.swift */; };
 		A2C0E0D229041EA300AD8C5E /* RequestSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C0E0D129041EA300AD8C5E /* RequestSerivce.swift */; };
 		A2C0E0D5290422D700AD8C5E /* NasaAstronomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C0E0D4290422D700AD8C5E /* NasaAstronomy.swift */; };
+		A2C495B82912CB70004A4C8B /* SerialRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C495B72912CB70004A4C8B /* SerialRequests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A22F504E2907B05D00C2E03D /* UploadMultipartEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadMultipartEndPoint.swift; sourceTree = "<group>"; };
 		A22F50502907B42F00C2E03D /* UploadMultipart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadMultipart.swift; sourceTree = "<group>"; };
 		A22F50522907B4A800C2E03D /* UploadMultipartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadMultipartService.swift; sourceTree = "<group>"; };
-		A22F50542908097700C2E03D /* NetworkClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkClient; path = ../NetworkClient; sourceTree = "<group>"; };
 		A261D70228F6821B003E00F3 /* NetworkClientSink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkClientSink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A261D70528F6821B003E00F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A261D70728F6821B003E00F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +56,7 @@
 		A2C0E0CF29041E7800AD8C5E /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A2C0E0D129041EA300AD8C5E /* RequestSerivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSerivce.swift; sourceTree = "<group>"; };
 		A2C0E0D4290422D700AD8C5E /* NasaAstronomy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAstronomy.swift; sourceTree = "<group>"; };
+		A2C495B72912CB70004A4C8B /* SerialRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialRequests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +74,6 @@
 		A261D6F928F6821B003E00F3 = {
 			isa = PBXGroup;
 			children = (
-				A22F50542908097700C2E03D /* NetworkClient */,
 				A261D70428F6821B003E00F3 /* NetworkClientSink */,
 				A261D70328F6821B003E00F3 /* Products */,
 			);
@@ -144,6 +144,7 @@
 				A2C0E0C528FBF44C00AD8C5E /* BackgroundDownload.swift */,
 				A2C0E0CF29041E7800AD8C5E /* Request.swift */,
 				A22F50502907B42F00C2E03D /* UploadMultipart.swift */,
+				A2C495B72912CB70004A4C8B /* SerialRequests.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -249,6 +250,7 @@
 				A22F50532907B4A800C2E03D /* UploadMultipartService.swift in Sources */,
 				A261D71D28F68347003E00F3 /* DownloadEndpoint.swift in Sources */,
 				A2C0E0BF28F7A82500AD8C5E /* ForegroundDownload.swift in Sources */,
+				A2C495B82912CB70004A4C8B /* SerialRequests.swift in Sources */,
 				A2C0E0C628FBF44C00AD8C5E /* BackgroundDownload.swift in Sources */,
 				A261D70828F6821B003E00F3 /* SceneDelegate.swift in Sources */,
 			);

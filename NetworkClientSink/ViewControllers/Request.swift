@@ -11,13 +11,13 @@ class Request: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        execute(type: .serial)
+        execute(type: .codable)
     }
 }
 
 private extension Request {
     enum RequestType {
-        case data, codable, serial, concurrent
+        case data, codable
     }
 
     func execute(type: RequestType) {
@@ -26,10 +26,6 @@ private extension Request {
             dataRequest()
         case .codable:
             codableRequest()
-        case .serial:
-            serialRequests()
-        case .concurrent:
-            concurrentRequests()
         }
     }
 
@@ -70,26 +66,5 @@ private extension Request {
                 self?.subText.text = model.explanation
             }
             .store(in: &cancellable)
-    }
-
-    func serialRequests() {
-        service.serialRequests(endpoints: [.fetch, .fetch, .fetch], receive: .main)
-            .receive(on: DispatchQueue.main)
-            .compactMap { $0 }
-            .decode(type: NasaAstronomy.self, decoder: JSONDecoder())
-            .sink { result in
-                switch result {
-                case .finished:
-                    debugPrint("serialRequests finished")
-                case let .failure(error):
-                    debugPrint("serialRequests failed = \(error.localizedDescription)")
-                }
-            } receiveValue: { model in
-                debugPrint("serialRequests model = \(model)")
-            }
-            .store(in: &cancellable)
-    }
-
-    func concurrentRequests() {
     }
 }

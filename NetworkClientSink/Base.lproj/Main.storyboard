@@ -32,6 +32,9 @@
                                         <rect key="frame" x="33.33333333333335" y="43.333333333333343" width="127.66666666666669" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Bulk requests"/>
+                                        <connections>
+                                            <segue destination="vya-wK-akW" kind="show" id="UvI-mq-4YM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWc-p1-lRi">
                                         <rect key="frame" x="57.666666666666664" y="86.666666666666657" width="78.666666666666686" height="34.333333333333343"/>
@@ -135,7 +138,6 @@
         <!--Navigation Controller-->
         <scene sceneID="zcj-T3-Vhi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lQM-cB-Zay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3R7-Tm-q3T" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aTn-7R-DBc">
@@ -147,6 +149,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WGk-oU-C7d"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQM-cB-Zay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.92307692307691" y="3.5545023696682461"/>
         </scene>
@@ -187,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFY-M2-k6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2883" y="4"/>
+            <point key="canvasLocation" x="2878" y="13"/>
         </scene>
         <!--Request-->
         <scene sceneID="niX-a2-BKh">
@@ -287,6 +290,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgV-b1-Cwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2823" y="-749"/>
+        </scene>
+        <!--Serial Requests-->
+        <scene sceneID="Dsf-ni-m1P">
+            <objects>
+                <viewController storyboardIdentifier="SerialRequests" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vya-wK-akW" customClass="SerialRequests" customModule="NetworkClientSink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="auK-vw-BO0">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dhv-mx-yuY">
+                                <rect key="frame" x="20" y="111" width="350" height="713"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BH0-43-GLk">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="231"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vAg-C0-dtJ">
+                                        <rect key="frame" x="0.0" y="241" width="350" height="231"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BTU-DD-a7X">
+                                        <rect key="frame" x="0.0" y="482" width="350" height="231"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZJI-cw-Qhc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Dhv-mx-yuY" secondAttribute="bottom" constant="20" id="dqY-Lc-F6o"/>
+                            <constraint firstItem="Dhv-mx-yuY" firstAttribute="top" secondItem="ZJI-cw-Qhc" secondAttribute="top" constant="20" id="f4t-P6-ehf"/>
+                            <constraint firstItem="ZJI-cw-Qhc" firstAttribute="trailing" secondItem="Dhv-mx-yuY" secondAttribute="trailing" constant="20" id="teX-Z9-Qv8"/>
+                            <constraint firstItem="Dhv-mx-yuY" firstAttribute="leading" secondItem="ZJI-cw-Qhc" secondAttribute="leading" constant="20" id="xUe-Km-evP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Serial Requests" id="phA-Iu-krK" userLabel="Background download"/>
+                    <connections>
+                        <outlet property="image1" destination="BH0-43-GLk" id="w04-sU-mqs"/>
+                        <outlet property="image2" destination="vAg-C0-dtJ" id="mQi-g0-S1S"/>
+                        <outlet property="image3" destination="BTU-DD-a7X" id="cYB-et-kqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4h-qh-lXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876.9230769230767" y="675.35545023696682"/>
         </scene>
     </scenes>
     <resources>

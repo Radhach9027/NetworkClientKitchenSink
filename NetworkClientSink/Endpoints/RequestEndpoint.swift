@@ -7,7 +7,7 @@ enum RequestEndPoint {
 
 extension RequestEndPoint: NetworkRequestProtocol {
     var apiKey: String? {
-        "DEMO_KEY"
+        "l7eIYhKJYYmpXqbq8tSPHZC5qG1DFvcBCrsyOvhJ"
     }
 
     var baseURL: String {
