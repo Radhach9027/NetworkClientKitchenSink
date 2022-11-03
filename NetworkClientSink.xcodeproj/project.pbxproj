@@ -61,6 +61,7 @@
 		A2C495B72912CB70004A4C8B /* SerialRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialRequests.swift; sourceTree = "<group>"; };
 		A2C495B929137FB5004A4C8B /* Network+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Extensions.swift"; sourceTree = "<group>"; };
 		A2C495BB29137FE3004A4C8B /* SecCertificate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecCertificate+Extensions.swift"; sourceTree = "<group>"; };
+		A2C495BE291433CF004A4C8B /* NetworkClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkClient; path = ../NetworkClient; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 		A261D6F928F6821B003E00F3 = {
 			isa = PBXGroup;
 			children = (
+				A2C495BE291433CF004A4C8B /* NetworkClient */,
 				A261D70428F6821B003E00F3 /* NetworkClientSink */,
 				A261D70328F6821B003E00F3 /* Products */,
 			);
