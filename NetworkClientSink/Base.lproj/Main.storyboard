@@ -301,17 +301,6 @@
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dhv-mx-yuY">
                                 <rect key="frame" x="20" y="111" width="350" height="713"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BH0-43-GLk">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="231"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vAg-C0-dtJ">
-                                        <rect key="frame" x="0.0" y="241" width="350" height="231"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BTU-DD-a7X">
-                                        <rect key="frame" x="0.0" y="482" width="350" height="231"/>
-                                    </imageView>
-                                </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZJI-cw-Qhc"/>
@@ -325,9 +314,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Serial Requests" id="phA-Iu-krK" userLabel="Background download"/>
                     <connections>
-                        <outlet property="image1" destination="BH0-43-GLk" id="w04-sU-mqs"/>
-                        <outlet property="image2" destination="vAg-C0-dtJ" id="mQi-g0-S1S"/>
-                        <outlet property="image3" destination="BTU-DD-a7X" id="cYB-et-kqa"/>
+                        <outlet property="stack" destination="Dhv-mx-yuY" id="y6a-5T-TgU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4h-qh-lXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -7,7 +7,7 @@ class Request: UIViewController {
     @IBOutlet var image: UIImageView!
     @IBOutlet var text: UILabel!
     @IBOutlet var subText: UILabel!
-    private lazy var service = RequestService(network: Network(config: .default()))
+    private lazy var service = RequestService(network: Network.defaultSession)
 
     override func viewDidLoad() {
         super.viewDidLoad()

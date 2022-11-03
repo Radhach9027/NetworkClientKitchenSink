@@ -4,11 +4,16 @@ import UIKit
 
 class SerialRequests: UIViewController {
     private var cancellable = Set<AnyCancellable>()
-    @IBOutlet var image1: UIImageView!
-    @IBOutlet var image2: UIImageView!
-    @IBOutlet var image3: UIImageView!
-    private lazy var service = RequestService(network: Network(config: .default()))
-
+    @IBOutlet var stack: UIStackView!
+    private lazy var service = RequestService(network: Network.defaultSession)
+    private lazy var makeImageView: (URL) -> UIImageView = { url in
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFill
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.load(url: url)
+        return image
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         execute(type: .serial)
@@ -44,7 +49,10 @@ private extension SerialRequests {
                     }
                 }
             } receiveValue: { [weak self] model in
-                self?.image1.load(url: URL(string: model.url)!)
+                if let url = URL(string: model.url),
+                   let imageview = self?.makeImageView(url) {
+                    self?.stack.addArrangedSubview(imageview)
+                }
             }
             .store(in: &cancellable)
     }
