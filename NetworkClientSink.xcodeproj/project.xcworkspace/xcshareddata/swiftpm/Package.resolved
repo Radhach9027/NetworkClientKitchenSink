@@ -1,16 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Reachability",
-        "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
-        "state": {
-          "branch": "master",
-          "revision": "a81b7367f2c46875f29577e03a60c39cdfad0c8d",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "networkclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Radhach9027/NetworkClient",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a327b87a70a2498de1aa9070f8628dca3c9110c5"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a81b7367f2c46875f29577e03a60c39cdfad0c8d"
+      }
+    }
+  ],
+  "version" : 2
 }

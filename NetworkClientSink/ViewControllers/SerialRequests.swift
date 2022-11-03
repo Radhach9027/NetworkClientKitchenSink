@@ -13,7 +13,7 @@ class SerialRequests: UIViewController {
         image.load(url: url)
         return image
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         execute(type: .serial)

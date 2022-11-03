@@ -31,7 +31,6 @@ private extension BackgroundDownload {
             .sink { [weak self] result in
                 switch result {
                 case .finished:
-                    debugPrint("BackgroundDownload finished")
                     self?.progressView.progress = .zero
                 case let .failure(error):
                     self?.present(withTitle: error.title.value, message: error.errorMessage.value)
@@ -39,7 +38,6 @@ private extension BackgroundDownload {
             } receiveValue: { [weak self] response in
                 switch response {
                 case let .progress(percentage):
-                    debugPrint("BackgroundDownload percentage = \(percentage)")
                     self?.progressView.progress = percentage
                 case let .response(url):
                     self?.image.load(url: url)
