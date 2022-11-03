@@ -7,15 +7,15 @@ enum SecCertificateError<S, F> {
 
 extension SecCertificate {
     enum Certificate {
-        static let cert = ""
+        static let name = "put your certificate name"
     }
 
     static var hashKey: String {
-        ""
+        "put your public key"
     }
 
     static func loadFromBundle(
-        certName: String = Certificate.cert,
+        certName: String = Certificate.name,
         bundle: Bundle = Bundle.main
     ) -> SecCertificateError<SecCertificate, String> {
         guard let filePath = bundle.path(

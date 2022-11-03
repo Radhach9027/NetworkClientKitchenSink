@@ -5,7 +5,6 @@ extension Bundle {
         if let bundleIdentifier = Bundle.main.bundleIdentifier {
             return bundleIdentifier
         }
-
         return "Chandan.NetworkClientSink"
     }
 }
