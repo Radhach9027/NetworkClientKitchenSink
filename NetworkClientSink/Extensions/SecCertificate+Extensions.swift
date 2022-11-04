@@ -7,7 +7,7 @@ enum SecCertificateError<S, F> {
 
 extension SecCertificate {
     enum Certificate {
-        static let name = "put your certificate name"
+        static let name = "stackoverflow"
     }
 
     static var hashKey: String {

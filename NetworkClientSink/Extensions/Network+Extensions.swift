@@ -7,10 +7,7 @@ extension Network {
         case let .success(certificate):
             return Network(
                 config: .default(),
-                pinning: SSLPinning.certificatePinning(
-                    certificate: certificate,
-                    hash: SecCertificate.hashKey
-                )
+                pinning: .certificatePinning(certificate: certificate)
             )
         case .failure:
             return Network(config: .default())
@@ -22,10 +19,7 @@ extension Network {
         case let .success(certificate):
             return Network(
                 config: .background(identifer: Bundle.identifier),
-                pinning: SSLPinning.certificatePinning(
-                    certificate: certificate,
-                    hash: SecCertificate.hashKey
-                ),
+                pinning: .certificatePinning(certificate: certificate),
                 urlSessionDidFinishEvents: urlSessionDidFinishEvents
             )
         case .failure:
