@@ -32,6 +32,9 @@
 		A2C495B82912CB70004A4C8B /* SerialRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C495B72912CB70004A4C8B /* SerialRequests.swift */; };
 		A2C495BA29137FB5004A4C8B /* Network+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C495B929137FB5004A4C8B /* Network+Extensions.swift */; };
 		A2C495BC29137FE3004A4C8B /* SecCertificate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C495BB29137FE3004A4C8B /* SecCertificate+Extensions.swift */; };
+		A2C495C62917D344004A4C8B /* SocketProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C495C52917D344004A4C8B /* SocketProgramming.swift */; };
+		A2C495C82917D38C004A4C8B /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C495C72917D38C004A4C8B /* SocketService.swift */; };
+		A2C495CA2918ECCA004A4C8B /* SocketEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C495C92918ECCA004A4C8B /* SocketEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		A2C495B929137FB5004A4C8B /* Network+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Extensions.swift"; sourceTree = "<group>"; };
 		A2C495BB29137FE3004A4C8B /* SecCertificate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecCertificate+Extensions.swift"; sourceTree = "<group>"; };
 		A2C495C4291613FD004A4C8B /* NetworkClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkClient; path = ../NetworkClient; sourceTree = "<group>"; };
+		A2C495C52917D344004A4C8B /* SocketProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketProgramming.swift; sourceTree = "<group>"; };
+		A2C495C72917D38C004A4C8B /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		A2C495C92918ECCA004A4C8B /* SocketEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 				A261D71C28F68347003E00F3 /* DownloadEndpoint.swift */,
 				A2C0E0CD29041D3A00AD8C5E /* UploadEndpoint.swift */,
 				A22F504E2907B05D00C2E03D /* UploadMultipartEndPoint.swift */,
+				A2C495C92918ECCA004A4C8B /* SocketEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 				A261D71F28F68461003E00F3 /* DownloadService.swift */,
 				A2C0E0D129041EA300AD8C5E /* RequestSerivce.swift */,
 				A22F50522907B4A800C2E03D /* UploadMultipartService.swift */,
+				A2C495C72917D38C004A4C8B /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 				A2C0E0CF29041E7800AD8C5E /* Request.swift */,
 				A22F50502907B42F00C2E03D /* UploadMultipart.swift */,
 				A2C495B72912CB70004A4C8B /* SerialRequests.swift */,
+				A2C495C52917D344004A4C8B /* SocketProgramming.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -242,6 +251,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C495C62917D344004A4C8B /* SocketProgramming.swift in Sources */,
+				A2C495CA2918ECCA004A4C8B /* SocketEndpoint.swift in Sources */,
 				A2C0E0CC29041D2800AD8C5E /* RequestEndpoint.swift in Sources */,
 				A2C0E0D5290422D700AD8C5E /* NasaAstronomy.swift in Sources */,
 				A22F50512907B42F00C2E03D /* UploadMultipart.swift in Sources */,
@@ -254,6 +265,7 @@
 				A22F504F2907B05D00C2E03D /* UploadMultipartEndPoint.swift in Sources */,
 				A2C0E0C828FC4B6300AD8C5E /* Bundle+Extensions.swift in Sources */,
 				A261D72C28F68588003E00F3 /* UIView+Extensions.swift in Sources */,
+				A2C495C82917D38C004A4C8B /* SocketService.swift in Sources */,
 				A261D72E28F68588003E00F3 /* UIViewController+Extensions.swift in Sources */,
 				A261D70628F6821B003E00F3 /* AppDelegate.swift in Sources */,
 				A22F50532907B4A800C2E03D /* UploadMultipartService.swift in Sources */,

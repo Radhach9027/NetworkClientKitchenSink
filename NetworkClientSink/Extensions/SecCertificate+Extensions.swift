@@ -1,6 +1,6 @@
 import Foundation
 
-enum SecCertificateError<S, F> {
+enum SecCertificateResult<S, F> {
     case success(S)
     case failure(F)
 }
@@ -17,7 +17,7 @@ extension SecCertificate {
     static func loadFromBundle(
         certName: String = Certificate.name,
         bundle: Bundle = Bundle.main
-    ) -> SecCertificateError<SecCertificate, String> {
+    ) -> SecCertificateResult<SecCertificate, String> {
         guard let filePath = bundle.path(
             forResource: certName,
             ofType: "cer"

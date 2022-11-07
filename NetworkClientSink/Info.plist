@@ -26,5 +26,17 @@
 		<string>fetch</string>
 		<string>processing</string>
 	</array>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+    
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>wss</string>
+    </array>
 </dict>
 </plist>
