@@ -5,7 +5,7 @@ import NetworkClient
 final class SocketService: ObservableObject {
     private var network: NetworkProtocol
 
-    init(network: NetworkProtocol = Network.defaultSession) {
+    init(network: NetworkProtocol) {
         self.network = network
     }
     
@@ -19,6 +19,10 @@ final class SocketService: ObservableObject {
     
     func receive() -> PassthroughSubject<NetworkSocketMessage, NetworkError> {
         network.receive()
+    }
+    
+    func cancelSession(cancelCode: URLSessionWebSocketTask.CloseCode, reason: String? = nil) {
+        network.cancel(with: cancelCode, reason: reason)
     }
 }
 

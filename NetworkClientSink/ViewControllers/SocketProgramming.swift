@@ -4,7 +4,7 @@ import UIKit
 
 final class SocketProgramming: UIViewController {
     private var cancellable = Set<AnyCancellable>()
-    private lazy var service = SocketService()
+    private lazy var service = SocketService(network: Network.defaultSession)
     @IBOutlet private var start: UIButton!
     @IBOutlet private var send: UIButton!
     @IBOutlet private var sendMessageTextFiled: UITextField!

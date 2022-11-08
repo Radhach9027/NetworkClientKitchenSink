@@ -9,7 +9,7 @@ final class UploadMultipartService: ObservableObject {
         self.network = network
     }
 
-    func upload(endpoint: UploadMultipartEndPoint, receive: DispatchQueue) -> PassthroughSubject<UploadNetworkResponse, NetworkError> {
+    func upload(endpoint: UploadMultipartEndPoint, receive: DispatchQueue) -> PassthroughSubject<NetworkUploadResponse, NetworkError> {
          network.uploadMultipart(with: endpoint, receive: .main)
     }
 }

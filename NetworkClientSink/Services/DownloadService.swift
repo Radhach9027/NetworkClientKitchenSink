@@ -9,7 +9,7 @@ final class DownloadService: ObservableObject {
         self.network = network
     }
 
-    func download(endpoint: DownloadEndpoint, receive: DispatchQueue) -> PassthroughSubject<DownloadNetworkResponse, NetworkError> {
+    func download(endpoint: DownloadEndpoint, receive: DispatchQueue) -> PassthroughSubject<NetworkDownloadResponse, NetworkError> {
          network.download(for: endpoint, receive: receive)
     }
 }
