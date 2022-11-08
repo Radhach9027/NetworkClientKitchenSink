@@ -7,11 +7,11 @@ enum SocketEndpoint {
 
 extension SocketEndpoint: NetworkRequestProtocol {
     var baseURL: String {
-        "wss://demo.piesocket.com"
+        "wss://echo.websocket.org"
     }
     
     var urlPath: String {
-        "/v3/1?api_key=oCdCMcMPQpbvNjUIzqtvF1d2X2okWpDQj4AwARJuAgtjhzKxVEjQU6IdCjwm&notify_self"
+        ""
     }
     
     var urlComponents: URLComponents? {
@@ -19,7 +19,7 @@ extension SocketEndpoint: NetworkRequestProtocol {
     }
     
     var httpMethod: NetworkRequestMethod {
-        .post
+        .get
     }
 }
 

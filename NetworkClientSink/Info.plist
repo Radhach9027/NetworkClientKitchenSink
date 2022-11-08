@@ -33,10 +33,9 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-    
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>wss</string>
-    </array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>wss://api-pub.bitfinex.com</string>
+	</array>
 </dict>
 </plist>
