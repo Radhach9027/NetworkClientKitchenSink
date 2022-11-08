@@ -4,8 +4,8 @@ import UIKit
 
 class UploadMultipart: UIViewController {
     private var cancellable = Set<AnyCancellable>()
-    @IBOutlet var image: UIImageView!
-    @IBOutlet var progressView: UIProgressView!
+    @IBOutlet private var image: UIImageView!
+    @IBOutlet private var progressView: UIProgressView!
     private lazy var service = UploadMultipartService(network: Network.defaultSession)
 
     override func viewDidLoad() {

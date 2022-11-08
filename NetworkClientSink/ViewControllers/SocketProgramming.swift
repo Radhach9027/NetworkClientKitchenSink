@@ -2,13 +2,13 @@ import Combine
 import NetworkClient
 import UIKit
 
-class SocketProgramming: UIViewController {
+final class SocketProgramming: UIViewController {
     private var cancellable = Set<AnyCancellable>()
     private lazy var service = SocketService()
-    @IBOutlet var start: UIButton!
-    @IBOutlet var send: UIButton!
-    @IBOutlet var sendMessageTextFiled: UITextField!
-    @IBOutlet var receiveMessage: UILabel!
+    @IBOutlet private var start: UIButton!
+    @IBOutlet private var send: UIButton!
+    @IBOutlet private var sendMessageTextFiled: UITextField!
+    @IBOutlet private var receiveMessage: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -4,8 +4,8 @@ import UIKit
 
 class BackgroundDownload: UIViewController {
     private var cancellable = Set<AnyCancellable>()
-    @IBOutlet var progressView: UIProgressView!
-    @IBOutlet var image: UIImageView!
+    @IBOutlet private var progressView: UIProgressView!
+    @IBOutlet private var image: UIImageView!
     private lazy var service = DownloadService(
         network: Network.backgroundSession(urlSessionDidFinishEvents: { _ in
             DispatchQueue.main.async {

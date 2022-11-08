@@ -4,9 +4,9 @@ import UIKit
 
 class Request: UIViewController {
     private var cancellable = Set<AnyCancellable>()
-    @IBOutlet var image: UIImageView!
-    @IBOutlet var text: UILabel!
-    @IBOutlet var subText: UILabel!
+    @IBOutlet private var image: UIImageView!
+    @IBOutlet private var text: UILabel!
+    @IBOutlet private var subText: UILabel!
     private lazy var service = RequestService(network: Network.defaultSession)
 
     override func viewDidLoad() {

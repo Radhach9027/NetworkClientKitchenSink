@@ -4,7 +4,7 @@ import UIKit
 
 class SerialRequests: UIViewController {
     private var cancellable = Set<AnyCancellable>()
-    @IBOutlet var stack: UIStackView!
+    @IBOutlet private var stack: UIStackView!
     private lazy var service = RequestService(network: Network.defaultSession)
     private lazy var makeImageView: (URL) -> UIImageView = { url in
         let image = UIImageView()
