@@ -19,7 +19,10 @@ class SocketProgramming: UIViewController {
         service.startSession(endPoint: .start) { [weak self] error in
             if let error = error {
                 self?.sendMessageTextFiled.isHidden = true
-                self?.present(withTitle: error.title.value, message: error.userMessage)
+                self?.present(
+                    withTitle: error.title.value,
+                    message: error.userMessage
+                )
             } else {
                 self?.sendMessageTextFiled.isHidden = false
             }
@@ -31,7 +34,10 @@ class SocketProgramming: UIViewController {
             service.send(message: .text(text)) { [weak self] error in
                 if let error = error {
                     self?.receiveMessage.isHidden = true
-                    self?.present(withTitle: error.title.value, message: error.userMessage)
+                    self?.present(
+                        withTitle: error.title.value,
+                        message: error.userMessage
+                    )
                 } else {
                     self?.receiveMessage.isHidden = false
                 }
