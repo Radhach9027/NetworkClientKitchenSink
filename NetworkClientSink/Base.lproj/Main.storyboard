@@ -351,7 +351,7 @@
                                             <action selector="startWithSender:" destination="z4m-86-Nl1" eventType="touchUpInside" id="lUy-hk-knP"/>
                                         </connections>
                                     </button>
-                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IXn-X1-4Qf">
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="please enter some text to send" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IXn-X1-4Qf">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="kiV-cI-eJO"/>

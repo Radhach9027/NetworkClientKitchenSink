@@ -38,41 +38,45 @@ class SocketProgramming: UIViewController {
             }
         }
     }
-    
+
     func recivePong() {
         service.receive()
             .sink { [weak self] result in
                 switch result {
-                    case .failure(let error):
-                        self?.present(
-                            withTitle: error.title.value,
-                            message: error.errorMessage.value
-                        )
-                    case .finished:
-                        debugPrint("finished")
+                case let .failure(error):
+                    self?.present(
+                        withTitle: error.title.value,
+                        message: error.errorMessage.value
+                    )
+                case .finished:
+                    debugPrint("finished")
                 }
             } receiveValue: { message in
                 switch message {
-                    case .text(let string):
-                        debugPrint(string)
-                    case .data(let data):
-                        debugPrint(data)
+                case let .text(string):
+                    debugPrint(string)
+                case let .data(data):
+                    debugPrint(data)
                 }
             }
             .store(in: &cancellable)
     }
 }
 
-
 extension SocketProgramming: UITextFieldDelegate {
-    
     func textField(
         _ textField: UITextField,
         shouldChangeCharactersIn range: NSRange,
         replacementString string: String
     ) -> Bool {
-        let currentText = textField.text ?? ""
-        send.isHidden = currentText.isEmpty ? true : false
+        if let text = textField.text,
+           let textRange = Range(range, in: text) {
+            let updatedText = text.replacingCharacters(
+                in: textRange,
+                with: string
+            )
+            send.isHidden = updatedText.isEmpty ? true : false
+        }
         return true
     }
 }
