@@ -2,7 +2,7 @@ import Combine
 import NetworkClient
 import UIKit
 
-class UploadMultipart: UIViewController {
+final class UploadMultipart: UIViewController {
     private var cancellable = Set<AnyCancellable>()
     @IBOutlet private var image: UIImageView!
     @IBOutlet private var progressView: UIProgressView!

@@ -2,7 +2,7 @@ import Combine
 import NetworkClient
 import UIKit
 
-class ForegroundDownload: UIViewController {
+final class ForegroundDownload: UIViewController {
     private var cancellable = Set<AnyCancellable>()
     @IBOutlet private var progressView: UIProgressView!
     @IBOutlet private var image: UIImageView!

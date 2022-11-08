@@ -2,7 +2,7 @@ import Combine
 import NetworkClient
 import UIKit
 
-class Request: UIViewController {
+final class Request: UIViewController {
     private var cancellable = Set<AnyCancellable>()
     @IBOutlet private var image: UIImageView!
     @IBOutlet private var text: UILabel!

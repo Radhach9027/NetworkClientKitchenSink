@@ -2,7 +2,7 @@ import Combine
 import NetworkClient
 import UIKit
 
-class SerialRequests: UIViewController {
+final class SerialRequests: UIViewController {
     private var cancellable = Set<AnyCancellable>()
     @IBOutlet private var stack: UIStackView!
     private lazy var service = RequestService(network: Network.defaultSession)
