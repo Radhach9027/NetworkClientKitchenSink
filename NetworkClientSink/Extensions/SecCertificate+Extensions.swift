@@ -10,8 +10,12 @@ extension SecCertificate {
         static let name = "stackoverflow"
     }
 
-    static var hashKey: String {
-        "put your public key"
+    static var hashKeys: [String] {
+        ["put your public keys"]
+    }
+    
+    static var domain: String {
+        "your host"
     }
 
     static func loadFromBundle(
