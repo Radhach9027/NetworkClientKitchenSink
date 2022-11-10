@@ -14,11 +14,11 @@ extension Network {
         }
     }
 
-    class func backgroundSession(urlSessionDidFinishEvents: @escaping (URLSession) -> Void) -> Network {
+    class func backgroundSession(queue: OperationQueue, urlSessionDidFinishEvents: @escaping (URLSession) -> Void) -> Network {
         switch SecCertificate.loadFromBundle() {
         case let .success(certificate):
             return Network(
-                config: .background(identifer: Bundle.identifier),
+                config: .background(identifer: Bundle.identifier, queue: queue),
                 pinning: .certificatePinning(certificate: certificate),
                 urlSessionDidFinishEvents: urlSessionDidFinishEvents
             )

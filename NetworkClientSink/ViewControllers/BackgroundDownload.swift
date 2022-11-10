@@ -6,8 +6,15 @@ final class BackgroundDownload: UIViewController {
     private var cancellable = Set<AnyCancellable>()
     @IBOutlet private var progressView: UIProgressView!
     @IBOutlet private var image: UIImageView!
+    private lazy var downloadQueue: OperationQueue = {
+        var queue = OperationQueue()
+        queue.name = Bundle.identifier
+        queue.maxConcurrentOperationCount = 1
+        return queue
+    }()
+    
     private lazy var service = DownloadService(
-        network: Network.backgroundSession(urlSessionDidFinishEvents: { _ in
+        network: Network.backgroundSession(queue: downloadQueue, urlSessionDidFinishEvents: { _ in
             DispatchQueue.main.async {
                 if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
                    let completionHandler = appDelegate.backgroundSessionCompletionHandler {
@@ -26,7 +33,7 @@ final class BackgroundDownload: UIViewController {
 
 private extension BackgroundDownload {
     func backgroundDownload() {
-        service.download(endpoint: .image, receive: .main)
+        service.download(endpoint: .image, receive: DispatchQueue.global(qos: .background))
             .receive(on: DispatchQueue.main)
             .sink { [weak self] result in
                 switch result {
@@ -40,7 +47,7 @@ private extension BackgroundDownload {
                 case let .progress(percentage):
                     self?.progressView.progress = percentage
                 case let .response(url):
-                    self?.image.load(url: url)
+                    self?.image.loadFromDirectory(path: url.absoluteString)
                 }
             }
             .store(in: &cancellable)
