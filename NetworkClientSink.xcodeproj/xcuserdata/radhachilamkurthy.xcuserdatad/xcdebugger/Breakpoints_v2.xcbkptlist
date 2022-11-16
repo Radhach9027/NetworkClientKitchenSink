@@ -23,97 +23,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "22341944-7D94-444C-A340-F7218C163C32"
+            uuid = "21355B77-0DA8-4764-B4D3-6B97F78579F8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NetworkClientSink/ViewControllers/BackgroundDownload.swift"
+            filePath = "../NetworkClient/Sources/NetworkClient/Network/NetworkSessionDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "backgroundDownload()"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
+            landmarkName = "save(to:downloadedUrl:downloadTask:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6C3399CC-81DB-401C-B774-9C592A8FA6D2"
+            uuid = "90111265-DE6F-450F-A50C-50A01C340BB8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NetworkClientSink/ViewControllers/BackgroundDownload.swift"
+            filePath = "../NetworkClient/Sources/NetworkClient/Network/NetworkSessionDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "backgroundDownload()"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "save(to:downloadedUrl:downloadTask:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "50A91F66-3D8D-4E29-8932-4E4153E28D48"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NetworkClientSink/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "application(_:handleEventsForBackgroundURLSession:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "47DD0CF3-0022-40D2-AFE1-D7610CB822ED"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NetworkClientSink/ViewControllers/BackgroundDownload.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "service"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "47DD0CF3-0022-40D2-AFE1-D7610CB822ED - 98936fd6fe27417a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (__C.NSURLSession) -&gt; () in NetworkClientSink.BackgroundDownload.service.getter : NetworkClientSink.DownloadService"
-                  moduleName = "NetworkClientSink"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/radhachilamkurthy/Desktop/NetworkClientKitchenSink/NetworkClientSink/ViewControllers/BackgroundDownload.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "269">
-               </Location>
-               <Location
-                  uuid = "47DD0CF3-0022-40D2-AFE1-D7610CB822ED - 98936fd6fe27417a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (__C.NSURLSession) -&gt; () in NetworkClientSink.BackgroundDownload.service.getter : NetworkClientSink.DownloadService"
-                  moduleName = "NetworkClientSink"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/radhachilamkurthy/Desktop/NetworkClientKitchenSink/NetworkClientSink/ViewControllers/BackgroundDownload.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "331">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
