@@ -7,48 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "22D8185D-C399-48AA-B91F-26FDEF7AA66E"
+            uuid = "443B9C18-A30E-4B36-8013-17C75DB72CD8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NetworkClientSink/Extensions/UIImageView+Extensions.swift"
+            filePath = "../NetworkClient/Sources/NetworkClient/Network/AsyncNetwork+Downloads.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "loadFromDirectory(path:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "21355B77-0DA8-4764-B4D3-6B97F78579F8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../NetworkClient/Sources/NetworkClient/Network/NetworkSessionDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "234"
-            endingLineNumber = "234"
-            landmarkName = "save(to:downloadedUrl:downloadTask:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "90111265-DE6F-450F-A50C-50A01C340BB8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../NetworkClient/Sources/NetworkClient/Network/NetworkSessionDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
-            landmarkName = "save(to:downloadedUrl:downloadTask:)"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "download(for:receive:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

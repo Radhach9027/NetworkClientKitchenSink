@@ -19,6 +19,9 @@
 		A261D72028F68461003E00F3 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D71F28F68461003E00F3 /* DownloadService.swift */; };
 		A261D72C28F68588003E00F3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D72728F68588003E00F3 /* UIView+Extensions.swift */; };
 		A261D72E28F68588003E00F3 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D72928F68588003E00F3 /* UIViewController+Extensions.swift */; };
+		A26EB8C3292C980600063415 /* AsyncRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EB8C2292C980600063415 /* AsyncRequestService.swift */; };
+		A26EB8C5292C99C600063415 /* AsyncRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EB8C4292C99C600063415 /* AsyncRequest.swift */; };
+		A26EB8C7292CFAF300063415 /* AsyncDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EB8C6292CFAF300063415 /* AsyncDownloadService.swift */; };
 		A2C0E0BF28F7A82500AD8C5E /* ForegroundDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C0E0BE28F7A82500AD8C5E /* ForegroundDownload.swift */; };
 		A2C0E0C228FBE64F00AD8C5E /* NetworkClient in Frameworks */ = {isa = PBXBuildFile; productRef = A2C0E0C128FBE64F00AD8C5E /* NetworkClient */; };
 		A2C0E0C428FBF19B00AD8C5E /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C0E0C328FBF19B00AD8C5E /* UIImageView+Extensions.swift */; };
@@ -53,6 +56,9 @@
 		A261D71F28F68461003E00F3 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		A261D72728F68588003E00F3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		A261D72928F68588003E00F3 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		A26EB8C2292C980600063415 /* AsyncRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestService.swift; sourceTree = "<group>"; };
+		A26EB8C4292C99C600063415 /* AsyncRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequest.swift; sourceTree = "<group>"; };
+		A26EB8C6292CFAF300063415 /* AsyncDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncDownloadService.swift; sourceTree = "<group>"; };
 		A2C0E0BE28F7A82500AD8C5E /* ForegroundDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForegroundDownload.swift; sourceTree = "<group>"; };
 		A2C0E0C328FBF19B00AD8C5E /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		A2C0E0C528FBF44C00AD8C5E /* BackgroundDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownload.swift; sourceTree = "<group>"; };
@@ -138,6 +144,8 @@
 				A2C0E0D129041EA300AD8C5E /* RequestSerivce.swift */,
 				A22F50522907B4A800C2E03D /* UploadMultipartService.swift */,
 				A2C495C72917D38C004A4C8B /* SocketService.swift */,
+				A26EB8C2292C980600063415 /* AsyncRequestService.swift */,
+				A26EB8C6292CFAF300063415 /* AsyncDownloadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 				A22F50502907B42F00C2E03D /* UploadMultipart.swift */,
 				A2C495B72912CB70004A4C8B /* SerialRequests.swift */,
 				A2C495C52917D344004A4C8B /* SocketProgramming.swift */,
+				A26EB8C4292C99C600063415 /* AsyncRequest.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -262,12 +271,15 @@
 				A2C0E0D029041E7800AD8C5E /* Request.swift in Sources */,
 				A2C495BA29137FB5004A4C8B /* Network+Extensions.swift in Sources */,
 				A2C0E0CE29041D3A00AD8C5E /* UploadEndpoint.swift in Sources */,
+				A26EB8C5292C99C600063415 /* AsyncRequest.swift in Sources */,
+				A26EB8C3292C980600063415 /* AsyncRequestService.swift in Sources */,
 				A2C0E0D229041EA300AD8C5E /* RequestSerivce.swift in Sources */,
 				A2C0E0C428FBF19B00AD8C5E /* UIImageView+Extensions.swift in Sources */,
 				A261D72028F68461003E00F3 /* DownloadService.swift in Sources */,
 				A22F504F2907B05D00C2E03D /* UploadMultipartEndPoint.swift in Sources */,
 				A2C0E0C828FC4B6300AD8C5E /* Bundle+Extensions.swift in Sources */,
 				A261D72C28F68588003E00F3 /* UIView+Extensions.swift in Sources */,
+				A26EB8C7292CFAF300063415 /* AsyncDownloadService.swift in Sources */,
 				A2C495C82917D38C004A4C8B /* SocketService.swift in Sources */,
 				A261D72E28F68588003E00F3 /* UIViewController+Extensions.swift in Sources */,
 				A261D70628F6821B003E00F3 /* AppDelegate.swift in Sources */,
